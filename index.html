@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ALLIMS LIB</title>
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./src/lib/styles/index.scss" />
+
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            :root {
+                width: 100vw;
+                height: 100vh;
+                font-size: 10px;
+                font-family: "Roboto", sans-serif;
+            }
+
+            #root {
+                width: 100vw;
+                height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/example/index.tsx"></script>
+    </body>
 </html>

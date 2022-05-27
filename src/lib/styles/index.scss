@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.allims-lib-base-input {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    height: 1rem;
+    padding: 0 5px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    text-overflow: ellipsis;
+    background-color: transparent;
+    text-align: center;
+
+}
+
+.allims-lib-form {
+    width: 100%;
+    height: 100%
+}
+
+.allims-lib-cellcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    min-width: 2rem;
+    cursor: pointer;
+    border: 0.5px solid #efefef;
+}
+
+.allims-lib-secondary-grid-edit {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+
+.allims-lib-secondary-grid-edit-not-pivot {
+    position: relative;
+    flex-wrap: wrap;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.allims-lib-secondary-grid-edit-pivot {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+[data-type="table"]{
+    background-color: #ebebeb;
+}
+
+[data-type="column"]{
+    background-color: #ebebeb;
+}
+
+[data-type="row"]{
+    background-color: #ebebeb;
+}
+
+[data-state="normal"] {
+    border: 0.5px solid #f3f3f3;
+}
+
+[data-state="active"] {
+    border: 1px solid #0a6e90;
+}
+
+[data-state="disabled"] {
+    background-color: #c8c8c8;
+}
+
+[data-state="empty"] {
+    background-color: #969696;
+}
+
+[data-state="selected"] {
+    background-color:#095169;
+
+    input {
+        color: #fff;
+    }
+}
+
+[data-edit="true"] {
+    border: 1px solid #091b69;
+    input {
+        text-align: left;
+    }
+}
+
+[data-error="true"] {
+    border: 1px solid #d20c0c;
+}
+
+[data-error="true"][data-state="active"]  {
+    border: 1px solid #d2680c;
+}
